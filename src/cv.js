@@ -86,7 +86,6 @@ export const gymnasial = {
     desc: ["Fotografisk bild 1 - 100p (2020)"],
   },
 }
-
 export const yrke = {
   "Folkparksvägens gruppbostad": {
     title: "Vårdare",

@@ -42,23 +42,25 @@ header {
   article {
     height: fit-content;
     margin-left: 48px;
+    padding: 8px;
   }
 }
 .img {
-  background: $white1;
+  //background: $white1;
   grid-row: 1/2;
   grid-column: 8/9;
   z-index: 2;
   box-sizing: border-box;
-  padding: 8px;
   justify-self: flex-end;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
+  padding: 8px;
   img {
     border-radius: 50%;
+    border: 1px solid $white1;
     height: 128px;
     width: 128px;
     filter: grayscale(1);
