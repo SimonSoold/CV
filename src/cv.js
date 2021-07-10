@@ -5,7 +5,7 @@ export const info = {
 }
 export const links = {
   LinkedIn: "https://www.linkedin.com/in/simon-soold-607b231bb/",
-  Github: "https://github.com/Phnom",
+  Github: "https://github.com/SimonSoold",
   "Instagram Foto": "https://www.instagram.com/intheeyesofsimonsoold/",
   "Instagram Beats": "https://www.instagram.com/1soold/?hl=sv",
 }
