@@ -1,7 +1,7 @@
 export const info = {
   Stad: "stockholm",
   Telefon: "+46708794888",
-  Mail: "soold88@hotmail.se",
+  Mail: "soold.simon@gmail.com",
 }
 export const links = {
   LinkedIn: "https://www.linkedin.com/in/simon-soold-607b231bb/",
