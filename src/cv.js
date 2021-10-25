@@ -31,21 +31,21 @@ export const aboutTwo =
   "Jag gillar musik och jag producerar samplingsbaserade beats. Jag tycker även om att fotografera, skriver en del och älskar mat. När jag inte har studerat har jag arbetat med människor på ett eller annat vis."
 
 export const utbildning = {
-  "JavaScript-utvecklare": {
-    school: "IT-Högskolan",
+  "IT-Högskolan": {
+    program: "JavaScript-utvecklare",
     desc: [
       "Yrkesförberedande utbildning med fokus på programspråket JavaScript.",
       "Söker Lia-plats till perioderna hösten 2021 & våren 2022.",
     ],
   },
-  "Audio Enginering Program": {
-    school: "SAE Institute",
+  "SAE Institute": {
+    program: "Audio Enginering Program",
     desc: [
       "Utbildningen gick igenom olika praktiser inom yrket som ljudtekniker live såväl som inspelning, redigering & bearbetning av ljud.",
     ],
   },
   "Stockholms Universitet": {
-    school: "Fristående kurser",
+    program: null,
     desc: [
       "Filmmusik 15hp (2010)",
       "Musikteori 15hp (2011)",
@@ -54,20 +54,20 @@ export const utbildning = {
     ],
   },
   Linnéuniversitetet: {
-    school: "Fristående kurser",
+    program: null,
     desc: ["Projektledning - musik och event - 15hp (2011)"],
   },
 }
 
 export const gymnasial = {
-  "Soul/rap 3 år": {
-    school: "Fryshuset",
+  "Fryshuset": {
+    program: "Soul/rap 3 år",
     desc: [
       "Utbildningen fokuserade på låtskriveri, musikproduktion, ljudteknik, scenframförande, sång & huvudinstrumentet rap.",
     ],
   },
   "Jensen Komvux": {
-    school: "Fristående kurser",
+    program: null,
     desc: [
       "Programmering 1 - 100p (2019)",
       "Programmering 2 - 100p (2020)",
@@ -76,14 +76,14 @@ export const gymnasial = {
     ],
   },
   "NTI-skolan": {
-    school: "Fristående kurser",
+    program: null,
     desc: [
       "Fotografisk bild 2 - 100p (2020)",
       "Digitalt skapande – 100p (2020)",
     ],
   },
   "Åsö Vuxengymnasium": {
-    school: "Fristående kurser",
+    program: null,
     desc: ["Fotografisk bild 1 - 100p (2020)"],
   },
 }

@@ -46,7 +46,7 @@ const App = () => {
               <DescList
                 subject={program}
                 key={program[2] + 2}
-                title={utbildning[program].school}
+                title={utbildning[program].program}
                 descriptions={utbildning[program].desc}
               />
             ))}
@@ -56,7 +56,7 @@ const App = () => {
               <DescList
                 subject={program}
                 key={program[2] + 2}
-                title={gymnasial[program].school}
+                title={gymnasial[program].program}
                 descriptions={gymnasial[program].desc}
               />
             ))}
@@ -110,7 +110,7 @@ class App extends Component {
               <DescList
                 subject={program}
                 key={program[2] + 2}
-                title={utbildning[program].school}
+                title={utbildning[program].program}
                 descriptions={utbildning[program].desc}
               />
             ))}
@@ -120,7 +120,7 @@ class App extends Component {
               <DescList
                 subject={program}
                 key={program[2] + 2}
-                title={gymnasial[program].school}
+                title={gymnasial[program].program}
                 descriptions={gymnasial[program].desc}
               />
             ))}

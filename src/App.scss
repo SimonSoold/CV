@@ -15,6 +15,7 @@ $grey4: #666666;
   padding: 0;
 }
 .App {
+  background: $white3;
   height: 100vh;
   width: 100%;
   display: grid;
@@ -65,16 +66,15 @@ header {
   }
 }
 main {
-  background: $white3;
   grid-column: 2/end;
-  grid-row: 3/12;
+  grid-row: 3/end;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(12, 1fr);
   article {
     background: $white2;
     color: $black;
-    margin: 16px;
+    margin: 16px 0 16px 16px;
     //border: 8px solid $black;
     list-style: none;
     overflow-y: auto;
@@ -128,10 +128,12 @@ main {
   }
   .work {
     grid-column: 1/4;
-    grid-row: 5/end;
+    grid-row: 4/end;
     //border-right: none;
     //border-bottom: none;
     padding: 8px;
+    z-index: 2;
+    height: fit-content;
   }
 }
 aside {
@@ -161,7 +163,7 @@ aside {
   }
 }
 footer {
-  background: $black;
+  background: $black2;
   grid-column: 2/end;
   grid-row: 12/13;
 }
