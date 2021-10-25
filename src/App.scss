@@ -67,14 +67,16 @@ header {
 }
 main {
   grid-column: 2/end;
-  grid-row: 3/end;
+  grid-row: 3/12;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(12, 1fr);
+  padding: 16px;
+  box-sizing: border-box;
   article {
     background: $white2;
     color: $black;
-    margin: 16px 0 16px 16px;
+    margin: 0 16px 0 0;
     //border: 8px solid $black;
     list-style: none;
     overflow-y: auto;
@@ -127,13 +129,15 @@ main {
     padding: 8px;
   }
   .work {
+    align-self: flex-end;
     grid-column: 1/4;
-    grid-row: 4/end;
+    grid-row: 5/end;
     //border-right: none;
     //border-bottom: none;
     padding: 8px;
     z-index: 2;
     height: fit-content;
+    margin-top: 16px;
   }
 }
 aside {
