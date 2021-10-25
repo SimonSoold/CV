@@ -1,13 +1,11 @@
 export const info = {
-  Stad: "stockholm",
+  Stad: "Stockholm",
   Telefon: "+46708794888",
   Mail: "soold.simon@gmail.com",
 }
 export const links = {
   LinkedIn: "https://www.linkedin.com/in/simon-soold-607b231bb/",
   Github: "https://github.com/SimonSoold",
-  "Instagram Foto": "https://www.instagram.com/intheeyesofsimonsoold/",
-  "Instagram Beats": "https://www.instagram.com/1soold/?hl=sv",
 }
 export const skills = {
   HTML: 4,
@@ -15,8 +13,10 @@ export const skills = {
   Javascript: 4,
   "Node.js": 2,
   "Vue.js": 3,
-  "React.js": 1,
-  "Express.js": 1,
+  "React.js": 3,
+  "Express.js": 4,
+  "Sequalize.js": 3,
+  "Mongoose.js": 2,
   "Tone.js": 2,
   Photoshop: 2,
   Lightroom: 3,

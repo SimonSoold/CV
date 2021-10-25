@@ -2,13 +2,9 @@ import React from "react"
 import { SkillItem } from "./skill-item.jsx"
 import { InfoItem } from "./info-item.jsx"
 import { LinkItem } from "./link-item.jsx"
-import photo from "./Simon.jpg"
 
 export const Aside = ({ info, links, skills }) => (
   <aside>
-    <div className="img">
-      <img src={photo} alt="Simon" />
-    </div>
     <div className="info-list">
       <h3>Info</h3>
       <hr/>
