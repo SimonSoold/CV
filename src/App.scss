@@ -82,16 +82,16 @@ main {
     overflow-y: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    hr {
+    hr, h4 {
       margin-bottom: 8px;
     }
     dl {
       margin-left: 8px;
       dd {
-        margin-bottom: 8px;
+        margin-bottom: 4px;
       }
       dt {
-        margin-bottom: 8px;
+        margin-bottom: 2px;
       }
     }
     div {

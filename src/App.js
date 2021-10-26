@@ -41,7 +41,6 @@ const App = () => {
             <h3>Utbildning</h3>
             <hr />
             <h4>Högskola/YrkesHögskola</h4>
-            <hr />
             {Object.keys(utbildning).map((program) => (
               <DescList
                 subject={program}
@@ -51,7 +50,6 @@ const App = () => {
               />
             ))}
             <h4>Gymnasial utbildning</h4>
-            <hr />
             {Object.keys(gymnasial).map((program) => (
               <DescList
                 subject={program}
