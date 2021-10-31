@@ -11,12 +11,12 @@ import {
   yrke,
 } from "./cv.js"
 
-
 import photo from "./Simon.jpg"
-import { Aside } from "./components/aside/aside.jsx"
-import { DescList } from "./components/main/desc-list.jsx"
-import { DescListYear } from "./components/main/desc-list-year.jsx"
-
+import DescList from "./components/desc-list.jsx"
+import DescListYear from "./components/desc-list-year.jsx"
+import SkillItem from "./components/skill-item.jsx"
+import InfoItem from "./components/info-item.jsx"
+import LinkItem from "./components/link-item.jsx"
 const App = () => {
   return (
     <div className="App">
@@ -30,6 +30,7 @@ const App = () => {
         <img src={photo} alt="Simon" />
       </div>
       <main>
+        <div>
         <article className="about">
           <h3>Kort om mig</h3>
           <hr />
@@ -72,11 +73,37 @@ const App = () => {
               />
             ))}
           </article>
+        </div>
       </main>
-      <Aside info={info} links={links} skills={skills} />
-      <footer>
-
-      </footer>
+      <aside className="infoContainer">
+        <div>
+        <div className="info-list">
+        <h3>Info</h3>
+        <hr/>
+        {Object.keys(info).map((item) => (
+        <InfoItem key={item + 1} title={item + ":"} info={info[item]} />
+        ))}
+        </div>
+        <div className="links-list">
+        <h3>Links</h3>
+        <hr/>
+        {Object.keys(links).map((item) => (
+        <LinkItem key={item + 2} title={item} link={links[item]} />
+        ))}
+        </div>
+        </div>
+      </aside>
+      <aside className="skillContainer">
+        <div>
+        <div className="skills-list">
+        <h3>Skills</h3>
+        <hr/>
+        {Object.keys(skills).map((item) => (
+          <SkillItem key={item + 3} skill={item} points={skills[item]} />
+        ))}
+        </div>
+        </div>
+      </aside>
     </div>
   )
 }

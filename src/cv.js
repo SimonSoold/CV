@@ -1,6 +1,5 @@
 export const info = {
   Stad: "Stockholm",
-  Telefon: "+46708794888",
   Mail: "soold.simon@gmail.com",
 }
 export const links = {
@@ -26,7 +25,7 @@ export const skills = {
   "Ableton Live": 4,
 }
 export const aboutOne =
-  "För närvarande studerar jag på IT-Högskolan med inriktning Javascript. Jag har alltid tyckt om problemlösning, det är det som väckt mitt intresse för att koda. Ser jag ett potentiellt mönster går hjärnan igång och spinner i bakgrunden tills att pusslet är lagt."
+  "För närvarande studerar jag på IT-Högskolan med inriktning JavaScript. Jag har alltid tyckt om problemlösning, det är det som väckt mitt intresse för att koda. Ser jag ett potentiellt mönster går hjärnan igång och spinner i bakgrunden tills att pusslet är lagt."
 export const aboutTwo =
   "Jag gillar musik och jag producerar samplingsbaserade beats. Jag tycker även om att fotografera, skriver en del och älskar mat. När jag inte har studerat har jag arbetat med människor på ett eller annat vis."
 
