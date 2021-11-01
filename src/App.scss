@@ -17,6 +17,8 @@ $grey4: #666666;
 html {
   font-size: clamp(0.8rem, 1vw, 2rem); 
 }
+h1, h2 {
+}
 h5 {
   white-space: nowrap;
 }
@@ -39,6 +41,9 @@ header {
   justify-content: space-between;
   background-color: $black;
   color: $white1;
+  -webkit-box-shadow: 1px 2px 3px 0px $grey4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 2px 3px 0px $grey4;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 2px 3px 0px $grey4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   article {
     height: fit-content;
     margin-left: 48px;
@@ -68,9 +73,9 @@ header {
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-    -webkit-box-shadow: 1px 2px 3px 2px $grey4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    1px 2px 3px 2px $grey4;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         1px 2px 3px 2px $grey4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    -webkit-box-shadow: 1px 2px 3px 0px $grey4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    1px 2px 3px 0px $grey4;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         1px 2px 3px 0px $grey4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   }
   img:hover {
     filter: grayscale(0);
@@ -93,6 +98,9 @@ main {
     overflow-y: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    -webkit-box-shadow: 1px 2px 3px 0px $grey4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    1px 2px 3px 0px $grey4;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         1px 2px 3px 0px $grey4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
     article {
       background: $white2;
       color: $black;
@@ -149,6 +157,9 @@ aside {
   background: $white2;
   grid-row: 2/end;
   margin: 16px 0 16px 0;
+  -webkit-box-shadow: 1px 2px 3px 0px $grey4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 2px 3px 0px $grey4;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 2px 3px 0px $grey4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   hr {
     margin-bottom: 8px;
   }
@@ -178,7 +189,11 @@ aside {
       a {
         text-decoration: none;
         color: $black;
+        margin-left: 8px;
       }
+    }
+    dl, dd {
+      margin-left: 8px;
     }
   }
 }
