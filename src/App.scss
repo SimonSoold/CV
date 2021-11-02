@@ -205,6 +205,7 @@ aside {
     justify-content: space-between;
     div {
       margin-bottom: 8px;
+      width: 100%;
     }
     .skill-item {
       display: flex;
@@ -249,25 +250,27 @@ aside {
       grid-row: 2/10;
       grid-column: 1/end;
     }
+    aside.skillContainer {
+      grid-row: 10/11;
+      grid-column: 1/end;
+      margin: 0 16px 16px 16px;
+      height: fit-content;
+    }
     aside.infoContainer {
       grid-row: 12/13;
       grid-column: 1/end;
-      margin: 0 8px 16px 16px;
+      margin: 0;
+      background-color: $black;
+      color: $white1;
+      a {
+        color: $white1;
+      }
       > div {
         flex-direction: row;
         .links-list {
           padding: 0;
         }
-        div {
-          width: 100%;
-        }
       }
-    }
-    aside.skillContainer {
-      grid-row: 10/11;
-      grid-column: 1/end;
-      margin: 0 16px 16px 8px;
-      height: fit-content;
     }
   }
 }
