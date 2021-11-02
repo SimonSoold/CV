@@ -1,22 +1,13 @@
 import React from "react"
 import "./App.scss"
-import {
-  info,
-  links,
-  skills,
-  aboutOne,
-  aboutTwo,
-  utbildning,
-  gymnasial,
-  yrke,
-} from "./cv.js"
-
 import photo from "./Simon.jpg"
-import DescList from "./components/desc-list.jsx"
-import DescListYear from "./components/desc-list-year.jsx"
-import SkillItem from "./components/skill-item.jsx"
-import InfoItem from "./components/info-item.jsx"
-import LinkItem from "./components/link-item.jsx"
+import DescListYear from "./components/descListYear.jsx"
+import DescListSchool from "./components/descListSchool"
+import SkillItem from "./components/skillItem.jsx"
+import InfoItem from "./components/infoItem.jsx"
+import LinkItem from "./components/linkItem.jsx"
+import CV from "./cv.json"
+
 const App = () => {
   return (
     <div className="App">
@@ -34,42 +25,34 @@ const App = () => {
         <article className="about">
           <h3>Kort om mig</h3>
           <hr />
-          <p>{aboutOne}</p>
+          <p>{CV[0].about[0]}</p>
           <br />
-          <p>{aboutTwo}</p>
+          <p>{CV[0].about[1]}</p>
         </article>
         <article className="study">
             <h3>Utbildning</h3>
             <hr />
             <h4>Högskola/YrkesHögskola</h4>
-            {Object.keys(utbildning).map((program) => (
-              <DescList
-                subject={program}
-                key={program[2] + 2}
-                title={utbildning[program].program}
-                descriptions={utbildning[program].desc}
-              />
-            ))}
+            <DescListSchool
+            props={CV[0].utbildning.hogskola}
+            />
             <h4>Gymnasial utbildning</h4>
-            {Object.keys(gymnasial).map((program) => (
-              <DescList
-                subject={program}
-                key={program[2] + 2}
-                title={gymnasial[program].program}
-                descriptions={gymnasial[program].desc}
-              />
-            ))}
+            {
+            <DescListSchool
+            props={CV[0].utbildning.gymnasial}
+            />   
+            }
           </article>
           <article className="work">
             <h3>Arbetslivserfarenhet</h3>
             <hr />
-            {Object.keys(yrke).map((jobb) => (
+            {Object.keys(CV[0].yrke).map((jobb) => (
               <DescListYear
                 subject={jobb}
                 key={jobb[2] + 2}
-                title={yrke[jobb].title}
-                descriptions={yrke[jobb].desc}
-                year={yrke[jobb].year}
+                title={CV[0].yrke[jobb].title}
+                descriptions={CV[0].yrke[jobb].desc}
+                year={CV[0].yrke[jobb].year}
               />
             ))}
           </article>
@@ -80,15 +63,15 @@ const App = () => {
         <div className="info-list">
         <h3>Info</h3>
         <hr/>
-        {Object.keys(info).map((item) => (
-        <InfoItem key={item + 1} title={item + ":"} info={info[item]} />
+        {Object.keys(CV[0].info).map((item) => (
+        <InfoItem key={item + 1} title={item + ":"} info={CV[0].info[item]} />
         ))}
         </div>
         <div className="links-list">
         <h3>Links</h3>
         <hr/>
-        {Object.keys(links).map((item) => (
-        <LinkItem key={item + 2} title={item} link={links[item]} />
+        {Object.keys(CV[0].links).map((item) => (
+        <LinkItem key={item + 2} title={item} link={CV[0].links[item]} />
         ))}
         </div>
         </div>
@@ -98,8 +81,8 @@ const App = () => {
         <div className="skills-list">
         <h3>Skills</h3>
         <hr/>
-        {Object.keys(skills).map((item) => (
-          <SkillItem key={item + 3} skill={item} points={skills[item]} />
+        {Object.keys(CV[0].skills).map((item) => (
+          <SkillItem key={item + 3} skill={item} points={CV[0].skills[item]} />
         ))}
         </div>
         </div>
@@ -108,65 +91,4 @@ const App = () => {
   )
 }
 
-/*
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Aside info={info} links={links} skills={skills} />
-        <header>
-          <h1>Simon Soold</h1>
-          <h2>Javascript Developer Student</h2>
-        </header>
-        <main>
-          <article className="about">
-            <h3>Kort om mig</h3>
-            <hr />
-            <p>{aboutOne}</p>
-            <br />
-            <p>{aboutTwo}</p>
-          </article>
-          <article>
-            <h3>Utbildning</h3>
-            <hr />
-            <h4>Högskola/YrkesHögskola</h4>
-            <hr />
-            {Object.keys(utbildning).map((program) => (
-              <DescList
-                subject={program}
-                key={program[2] + 2}
-                title={utbildning[program].program}
-                descriptions={utbildning[program].desc}
-              />
-            ))}
-            <h4>Gymnasial utbildning</h4>
-            <hr />
-            {Object.keys(gymnasial).map((program) => (
-              <DescList
-                subject={program}
-                key={program[2] + 2}
-                title={gymnasial[program].program}
-                descriptions={gymnasial[program].desc}
-              />
-            ))}
-          </article>
-          <article>
-            <h3>Arbetslivserfarenhet</h3>
-            <hr />
-            {Object.keys(yrke).map((jobb) => (
-              <DescListYear
-                subject={jobb}
-                key={jobb[2] + 2}
-                title={yrke[jobb].title}
-                descriptions={yrke[jobb].desc}
-                year={yrke[jobb].year}
-              />
-            ))}
-          </article>
-        </main>
-      </div>
-    )
-  }
-}
-*/
 export default App

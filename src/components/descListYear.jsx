@@ -1,7 +1,7 @@
 import React from "react"
 
 const DescListYear = ({subject, title, year, descriptions}) => (
-    <div className="desc-list desc-list-year">
+    <div className="descListYear">
         <h5>{subject}</h5>
         <p>{year}</p>
         <dl>

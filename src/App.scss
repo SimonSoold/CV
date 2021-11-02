@@ -17,8 +17,6 @@ $grey4: #666666;
 html {
   font-size: clamp(0.8rem, 1vw, 2rem); 
 }
-h1, h2 {
-}
 h5 {
   white-space: nowrap;
 }
@@ -73,9 +71,6 @@ header {
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-    -webkit-box-shadow: 1px 2px 3px 0px $grey4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    1px 2px 3px 0px $grey4;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         1px 2px 3px 0px $grey4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   }
   img:hover {
     filter: grayscale(0);
@@ -90,7 +85,7 @@ main {
   padding: 16px;
   box-sizing: border-box;
   p {
-    width: 50%;
+    width: 70%;
     margin-left: 8px;
   }
   > div {
@@ -104,17 +99,16 @@ main {
     article {
       background: $white2;
       color: $black;
-      padding: 8px;
-      //margin: 0 16px 0 16px;
-      //border: 8px solid $black;
+      box-sizing: border-box;
+      padding: 16px;
       hr, h4 {
         margin-bottom: 8px;
       }
       dl {
-        margin-left: 8px;
+        margin: 0 8px 0 8px;
+        font-size: 80%;
         dd {
           margin-bottom: 4px;
-          white-space: nowrap;
         }
         dt {
           margin-bottom: 2px;
@@ -122,23 +116,44 @@ main {
       }
       div {
         margin-left: 8px;
+        box-sizing: border-box;
+        p, dd {
+          margin-left: 8px;
+        }
       }
-      .links-list {
+      .descListSchool {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: 100%;
+        .courseList {
+          display: grid;
+          flex-direction: column;
+          grid-template-columns: repeat(7, 1fr) auto;
+          dl {
+            grid-column: 1/end;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+        .programList {
+          dd {
+            margin-left: 8px;
+          }
+        }
       }
-      .desc-list {
+      .descListYear {
         display: grid;
         flex-direction: column;
         grid-template-columns: repeat(7, 1fr) auto;
-        dl {
-          grid-column: 1/end;
+        > dl {
+          grid-column: 1/7;
         }
-      }
-      .desc-list-year > p {
-        align-self: flex-end;
-        grid-column: 8/end;
-        white-space: nowrap;
+        > p {
+          align-self: flex-end;
+          grid-column: 8/end;
+          white-space: nowrap;
+        }
       }
     }
   }
@@ -157,6 +172,7 @@ aside {
   background: $white2;
   grid-row: 2/end;
   margin: 16px 0 16px 0;
+  padding: 8px;
   -webkit-box-shadow: 1px 2px 3px 0px $grey4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    1px 2px 3px 0px $grey4;  /* Firefox 3.5 - 3.6 */
   box-shadow:         1px 2px 3px 0px $grey4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */

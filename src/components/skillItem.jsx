@@ -1,5 +1,5 @@
 import React from "react"
-import SkillPoint from "./skill-point.jsx"
+import SkillPoint from "./skillPoint.jsx"
 
 const SkillItem = ({skill, points}) => (
     <div className="skill-item">
