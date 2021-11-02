@@ -1,0 +1,181 @@
+[
+    {
+        "info": {
+            "Stad": "Stockholm",
+            "Mail": "soold.simon@gmail.com"
+        },
+        "links": {
+            "LinkedIn": "https://www.linkedin.com/in/simon-soold-607b231bb/",
+            "Github": "https://github.com/SimonSoold"
+        },
+        "skills": {
+            "HTML": 4,
+            "CSS": 4,
+            "Javascript": 4,
+            "Node.js": 2,
+            "Vue.js": 3,
+            "React.js": 3,
+            "Express.js": 4,
+            "Sequalize.js": 3,
+            "Mongoose.js": 2,
+            "Tone.js": 2,
+            "Photoshop": 2,
+            "Lightroom": 3,
+            "Alien Exposure": 4,
+            "Office": 2,
+            "Logic": 4,
+            "Ableton Live": 4
+        },
+        "about": [
+            "För närvarande studerar jag på IT-Högskolan med inriktning JavaScript. Jag har alltid tyckt om problemlösning, det är det som väckt mitt intresse för att koda. Ser jag ett potentiellt mönster går hjärnan igång och spinner i bakgrunden tills att pusslet är lagt.",
+            "Jag gillar musik och jag producerar samplingsbaserade beats. Jag tycker även om att fotografera, skriver en del och älskar mat. När jag inte har studerat har jag arbetat med människor på ett eller annat vis."
+        ],
+        "utbildning": {
+            "hogskola": {
+                "program": [
+                    {
+                        "school": "IT-Högskolan",
+                        "name": "JavaScript-utvecklare",
+                        "year": "2020-2022",
+                        "desc": [
+                          "Yrkesförberedande utbildning med fokus på programspråket JavaScript.",
+                          "Söker Lia-plats till våren 2022."
+                        ]
+                    }, 
+                    {
+                        "school": "SAE Institute",
+                        "name": "Audio Enginering Program",
+                        "year": "2014-2015",
+                        "desc": [
+                            "Utbildningen gick igenom olika praktiser inom yrket som ljudtekniker live såväl som inspelning, redigering & bearbetning av ljud."
+                        ]
+                    }
+                ], 
+                "courses": [
+                    {
+                        "school": "Stockholms Universitet",
+                        "courses": [
+                            {
+                                "name": "Filmmusik",
+                                "points": "15hp",
+                                "year": 2010
+                            },
+                            {
+                                "name": "Musikteori",
+                                "points": "15hp",
+                                "year": 2011
+                            },
+                            {
+                                "name": "Blues, jazz och modern populärmusik",
+                                "points": "15hp",
+                                "year": 2011
+                            },
+                            {
+                                "name": "Religionshistoria",
+                                "points": "30hp",
+                                "year": 2012
+                            }
+                        ]
+                    },
+                    {
+                        "school": "Linnéuniversitetet",
+                        "courses": [
+                            {
+                                "name": "Projektledning - musik och event",
+                                "points": "15p",
+                                "year": 2011
+                            }
+                        ]
+                    }
+                ]
+            },
+            "gymnasial": {
+                "program": [
+                    {
+                        "school": "Fryshuset",
+                        "name": "Soul/Rap",
+                        "year": "2004-2007",
+                        "desc": ["Utbildningen fokuserade på låtskriveri, musikproduktion, ljudteknik, scenframförande, sång & huvudinstrumentet rap."]
+                    }
+                ],
+                "courses": [
+                    {
+                        "school": "Jensen Komvux",
+                        "courses": [
+                            {
+                                "name": "Programmering 1",
+                                "points": "100p",
+                                "year": 2019
+                            },
+                            {
+                                "name": "Programmering 2",
+                                "points": "100p",
+                                "year": 2020
+                            },
+                            {
+                                "name": "Webbutveckling 1",
+                                "points": "100p",
+                                "year": 2020
+                            },
+                            {
+                                "name": "Webbutveckling 2",
+                                "points": "100p",
+                                "year": 2020
+                            }
+                        ]
+                    },
+                    {
+                        "school": "NTI-skolan",
+                        "courses": [
+                            {
+                                "name": "Fotografisk bild 2",
+                                "points": "100p",
+                                "year": 2020
+                            },
+                            {
+                                "name": "digitalt skapande",
+                                "points": "100p",
+                                "year": 2020
+                            }
+                        ]
+                    },
+                    {
+                        "school": "Åsö Vuxengymnasium",
+                        "courses": [
+                            {
+                                "name": "Fotografisk bild 1",
+                                "points": "100p",
+                                "year": 2020
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "yrke": {
+            "Folkparksvägens gruppbostad": {
+                "title": "Vårdare",
+                "desc": [
+                  "Assisterat boende på gruppbostaden i dagliga sysslor och aktiviteter.",
+                  "Tagit fram arbetsmaterial i Office-paket."
+                ],
+                "year": "2015-2019"
+              },
+              "Mysafety": {
+                "title": "Telefonförsäljare",
+                "desc": ["Sålde in Mysafetys säkerhetslösningar via telefon."],
+                "year": "2012-2014"
+              },
+              "Vendator": {
+                "title": "Telefonförsäljare",
+                "desc": ["Sålde in tjänster och abonnemang i uppdrag för Vendators Kunder."],
+                "year": "2007-2011"
+              },
+              "Debaser": {
+                "title": "Diskare/Barback",
+                "desc": ["Diskare/garderob/barback."],
+                "year": "2008-2010"
+              }
+        }
+    }
+]

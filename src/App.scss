@@ -1,0 +1,276 @@
+$black: #000000;
+$black2: #191919;
+$black3: #333333;
+$black4: #4c4c4c;
+$white1: #ffffff;
+$white2: #f2f2f2;
+$white3: #e5e5e5;
+$grey1: #cccccc;
+$grey2: #B2B2B2;
+$grey3: #7F7F7F;
+$grey4: #666666;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: clamp(0.8rem, 1vw, 2rem); 
+}
+h5 {
+  white-space: nowrap;
+}
+.year {
+  color: $grey3;
+  font-style: italic;
+}
+.App {
+  background: $white3;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto repeat(6, 1fr) auto;
+  grid-template-rows: auto repeat(11, 1fr);
+  overflow-y: hidden;
+}
+header {
+  grid-column: 1/end;
+  grid-row: 1/2;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $black;
+  color: $white1;
+  -webkit-box-shadow: 1px 2px 3px 0px $grey4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 2px 3px 0px $grey4;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 2px 3px 0px $grey4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  article {
+    height: fit-content;
+    margin-left: 48px;
+    padding: 8px;
+  }
+}
+.img {
+  //background: $white1;
+  grid-row: 1/2;
+  grid-column: 8/9;
+  z-index: 2;
+  box-sizing: border-box;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+  img {
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+    filter: grayscale(1);
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+  }
+  img:hover {
+    filter: grayscale(0);
+  }
+}
+main {
+  grid-column: 2/8;
+  grid-row: 2/end;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-sizing: border-box;
+  p {
+    width: 70%;
+    margin-left: 8px;
+  }
+  > div {
+    height: 100%;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    -webkit-box-shadow: 1px 2px 3px 0px $grey4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    1px 2px 3px 0px $grey4;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         1px 2px 3px 0px $grey4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    article {
+      background: $white2;
+      color: $black;
+      box-sizing: border-box;
+      padding: 16px;
+      hr, h4 {
+        margin-bottom: 8px;
+      }
+      dl {
+        margin: 0 0 0 8px;
+        dd {
+          margin-bottom: 4px;
+          max-width: 70%;
+        }
+        dt {
+          margin-bottom: 2px;
+        }
+      }
+      div {
+        box-sizing: border-box;
+        p, dd {
+          margin-left: 8px;
+        }
+      }
+      .descListSchool {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        .courseList {
+          display: grid;
+          grid-template-columns: repeat(7, 1fr) auto;
+          dl {
+            grid-column: 1/end;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+        .programList {
+          display: grid;
+          grid-template-columns: (repeat(7, 1fr)) auto;
+          h5 {
+            grid-row: 1/2;
+            grid-column: 1/end;
+          }
+          dl {
+            grid-row: 2/3;
+            grid-column: 1/end;
+          }
+          dd {
+            margin-left: 8px;
+          }
+          p {
+            grid-row: 1/2;
+            grid-column: 8/end;
+            justify-self: flex-end;
+            white-space: nowrap;
+            margin-right: 8px;
+          }
+        }
+      }
+      .descListWork {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(7, 1fr) auto;
+        > dl {
+          grid-column: 1/7;
+        }
+        > p {
+          align-self: flex-end;
+          grid-column: 8/end;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  div::-webkit-scrollbar {
+    display: none;
+  }
+}
+aside.skillCotainer {
+  grid-column: 8/end;
+}
+aside.infoContainer {
+  grid-column: 1/2;
+}
+aside {
+  box-sizing: border-box;
+  background: $white2;
+  grid-row: 2/end;
+  margin: 16px 0 16px 0;
+  padding: 8px;
+  -webkit-box-shadow: 1px 2px 3px 0px $grey4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 2px 3px 0px $grey4;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 2px 3px 0px $grey4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  hr {
+    margin-bottom: 8px;
+  }
+  > div {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+      margin-bottom: 8px;
+      width: 100%;
+    }
+    .skill-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      label {
+        white-space: nowrap;
+        margin-right: 8px;
+      }
+    }
+    .links-list {
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: column;
+      padding: 16px 16px 0 0;
+      a {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .App {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, auto);
+    height: 100%;
+    header {
+      article {
+        margin-left: 16px;
+      }
+    }
+    .img {
+      padding: 16px;
+      img {
+        width: 96px;
+        height: 96px;
+      }
+    }
+    main {
+      grid-row: 2/10;
+      grid-column: 1/end;
+    }
+    aside.skillContainer {
+      grid-row: 10/11;
+      grid-column: 1/end;
+      margin: 0 16px 16px 16px;
+      height: fit-content;
+    }
+    aside.infoContainer {
+      grid-row: 12/13;
+      grid-column: 1/end;
+      margin: 0;
+      background-color: $black;
+      color: $white1;
+      a {
+        color: $white1;
+      }
+      > div {
+        flex-direction: row;
+        .links-list {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
