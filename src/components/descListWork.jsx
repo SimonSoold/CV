@@ -1,7 +1,7 @@
 import React from "react"
 
-const DescListYear = ({subject, title, year, descriptions}) => (
-    <div className="descListYear">
+const DescListWork = ({subject, title, year, descriptions}) => (
+    <div className="descListWork">
         <h5>{subject}</h5>
         <p>{year}</p>
         <dl>
@@ -13,4 +13,4 @@ const DescListYear = ({subject, title, year, descriptions}) => (
     </div>
 )
 
-export default DescListYear
+export default DescListWork

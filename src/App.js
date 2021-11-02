@@ -1,7 +1,7 @@
 import React from "react"
 import "./App.scss"
 import photo from "./Simon.jpg"
-import DescListYear from "./components/descListYear.jsx"
+import DescListWork from "./components/descListWork.jsx"
 import DescListSchool from "./components/descListSchool"
 import SkillItem from "./components/skillItem.jsx"
 import InfoItem from "./components/infoItem.jsx"
@@ -47,7 +47,7 @@ const App = () => {
             <h3>Arbetslivserfarenhet</h3>
             <hr />
             {Object.keys(CV[0].yrke).map((jobb) => (
-              <DescListYear
+              <DescListWork
                 subject={jobb}
                 key={jobb[2] + 2}
                 title={CV[0].yrke[jobb].title}
