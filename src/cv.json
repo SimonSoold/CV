@@ -36,6 +36,7 @@
                     {
                         "school": "IT-Högskolan",
                         "name": "JavaScript-utvecklare",
+                        "year": "2020-2022",
                         "desc": [
                           "Yrkesförberedande utbildning med fokus på programspråket JavaScript.",
                           "Söker Lia-plats till våren 2022."
@@ -44,6 +45,7 @@
                     {
                         "school": "SAE Institute",
                         "name": "Audio Enginering Program",
+                        "year": "2014-2015",
                         "desc": [
                             "Utbildningen gick igenom olika praktiser inom yrket som ljudtekniker live såväl som inspelning, redigering & bearbetning av ljud."
                         ]
@@ -91,7 +93,8 @@
                 "program": [
                     {
                         "school": "Fryshuset",
-                        "name": "Soul/rap 3 år",
+                        "name": "Soul/Rap",
+                        "year": "2004-2007",
                         "desc": ["Utbildningen fokuserade på låtskriveri, musikproduktion, ljudteknik, scenframförande, sång & huvudinstrumentet rap."]
                     }
                 ],

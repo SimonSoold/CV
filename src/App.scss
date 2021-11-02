@@ -20,6 +20,10 @@ html {
 h5 {
   white-space: nowrap;
 }
+.year {
+  color: $grey3;
+  font-style: italic;
+}
 .App {
   background: $white3;
   height: 100vh;
@@ -105,8 +109,7 @@ main {
         margin-bottom: 8px;
       }
       dl {
-        margin: 0 8px 0 8px;
-        font-size: 80%;
+        margin: 0 0 0 8px;
         dd {
           margin-bottom: 4px;
           max-width: 70%;
@@ -128,7 +131,6 @@ main {
         height: 100%;
         .courseList {
           display: grid;
-          flex-direction: column;
           grid-template-columns: repeat(7, 1fr) auto;
           dl {
             grid-column: 1/end;
@@ -137,8 +139,25 @@ main {
           }
         }
         .programList {
+          display: grid;
+          grid-template-columns: (repeat(7, 1fr)) auto;
+          h5 {
+            grid-row: 1/2;
+            grid-column: 1/end;
+          }
+          dl {
+            grid-row: 2/3;
+            grid-column: 1/end;
+          }
           dd {
             margin-left: 8px;
+          }
+          p {
+            grid-row: 1/2;
+            grid-column: 8/end;
+            justify-self: flex-end;
+            white-space: nowrap;
+            margin-right: 8px;
           }
         }
       }

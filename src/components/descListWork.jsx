@@ -3,7 +3,7 @@ import React from "react"
 const DescListWork = ({subject, title, year, descriptions}) => (
     <div className="descListWork">
         <h5>{subject}</h5>
-        <p>{year}</p>
+        <p className="year">{year}</p>
         <dl>
             <dt>{title}</dt>
             <dd>

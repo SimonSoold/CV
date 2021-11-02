@@ -17,6 +17,7 @@ const DescListScool = ({props}) => {
                     ))
                 }
             </dl>
+            <p className="year">{program.year}</p>
         </div>
         ))             
         }
@@ -28,7 +29,7 @@ const DescListScool = ({props}) => {
                 courses.courses.map(course => (
                 <dl>
                     <dt>{course.name} - {course.points}</dt>
-                    <dd>{course.year}</dd>
+                    <dd className="year">{course.year}</dd>
                 </dl>
                 ))
             }
